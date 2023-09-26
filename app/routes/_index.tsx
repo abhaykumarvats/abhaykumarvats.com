@@ -28,7 +28,7 @@ export function loader() {
     title: "Work",
     jobs: [
       {
-        tenure: "05/23 — 08/23",
+        tenure: "May'23 —  Aug'23",
         type: "contract",
         title: "Senior Software Engineer — MiddlewareHQ",
         link: "https://www.middlewarehq.com",
@@ -37,7 +37,7 @@ export function loader() {
         skills: ["React", "Next.js", "TypeScript", "CSS"],
       },
       {
-        tenure: "01/22 — 04/23",
+        tenure: "Jan'22 — Apr'23",
         type: "full-time",
         title: "Software Engineer — Credgenics",
         link: "https://www.credgenics.com",
@@ -46,7 +46,7 @@ export function loader() {
         skills: ["React", "Redux", "JavaScript", "CSS"],
       },
       {
-        tenure: "12/20 — 01/22",
+        tenure: "Dec'20 — Jan'22",
         type: "full-time",
         title: "Frontend Engineer — Avizva",
         link: "https://www.avizva.com",
@@ -55,7 +55,7 @@ export function loader() {
         skills: ["React", "Next.js", "TypeScript", "CSS"],
       },
       {
-        tenure: "08/19 — 12/20",
+        tenure: "Aug'19 — Dec'20",
         type: "full-time",
         title: "Test Engineer — Altran",
         link: "https://www.linkedin.com/company/altran",
@@ -64,7 +64,7 @@ export function loader() {
         skills: ["Testrail", "Jira"],
       },
       {
-        tenure: "06/18 — 08/18",
+        tenure: "Jun'18 — Aug'18",
         type: "internship",
         title: "Full Stack Developer — GTM Catalyst",
         link: "https://www.linkedin.com/company/gtm-catalyst",
