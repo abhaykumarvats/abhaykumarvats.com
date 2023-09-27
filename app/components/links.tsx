@@ -1,5 +1,4 @@
 import {
-  EnvelopeClosedIcon,
   GitHubLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
@@ -7,33 +6,22 @@ import {
 
 import Link from "./ui/link";
 
-type Socials = {
-  title: string;
-  links: {
-    service: string;
-    username: string;
-    link: string;
-  }[];
-};
+import type { LinksType } from "~/lib/types";
 
 const serviceToIconMapping = {
-  Email: EnvelopeClosedIcon,
   LinkedIn: LinkedInLogoIcon,
   GitHub: GitHubLogoIcon,
   Twitter: TwitterLogoIcon,
 };
 
-function Links({ title, links }: Socials) {
+function Links({ title, links }: LinksType) {
   return (
     <footer>
       <h2 className="mb-2">{title}</h2>
 
       <div className="flex justify-between items-center flex-wrap gap-1">
         {links.map((link) => {
-          const Icon =
-            serviceToIconMapping[
-              link.service as keyof typeof serviceToIconMapping
-            ];
+          const Icon = serviceToIconMapping[link.service];
 
           return (
             <Link key={link.service} href={link.link}>

@@ -6,6 +6,7 @@ import About from "~/components/about";
 import Work from "~/components/work";
 import Projects from "~/components/projects";
 import Links from "~/components/links";
+import type { LinksType } from "~/lib/types";
 
 export const meta: MetaFunction = () => {
   return [{ title: "Abhay Kumar — The UI Guy" }];
@@ -89,7 +90,7 @@ export function loader() {
     ],
   };
 
-  const links = {
+  const links: LinksType = {
     title: "Links",
     links: [
       {
