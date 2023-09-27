@@ -52,7 +52,7 @@ export function loader() {
         link: "https://www.avizva.com",
         description:
           "Built an alerts functionality from scratch using WebSocket, praised by teammates for excellent implementation.",
-        skills: ["React", "Next.js", "TypeScript", "CSS"],
+        skills: ["React", "Redux", "JavaScript", "CSS"],
       },
       {
         tenure: "Aug'19 — Dec'20",
@@ -70,7 +70,7 @@ export function loader() {
         link: "https://www.linkedin.com/company/gtm-catalyst",
         description:
           "Created a dashboard using Node.js and SQL Server from the ground up, completing it within a tight deadline of two months.",
-        skills: ["jQuery", "Node.js", "Express.js", "MS SQL Server"],
+        skills: ["jQuery", "Kendo UI", "Express.js", "SQL Server"],
       },
     ],
   };
