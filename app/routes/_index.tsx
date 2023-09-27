@@ -103,7 +103,7 @@ export function loader() {
         link: "https://github.com/abhaykumarvats",
       },
       {
-        service: "Twitter/X",
+        service: "Twitter",
         username: "@abhaykumarvats",
         link: "https://twitter.com/abhaykumarvats",
       },

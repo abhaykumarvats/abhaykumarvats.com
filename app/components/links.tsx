@@ -1,3 +1,10 @@
+import {
+  EnvelopeClosedIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
+
 import Link from "./ui/link";
 
 type Socials = {
@@ -9,26 +16,34 @@ type Socials = {
   }[];
 };
 
+const serviceToIconMapping = {
+  Email: EnvelopeClosedIcon,
+  LinkedIn: LinkedInLogoIcon,
+  GitHub: GitHubLogoIcon,
+  Twitter: TwitterLogoIcon,
+};
+
 function Links({ title, links }: Socials) {
   return (
     <footer>
-      <h2>{title}</h2>
+      <h2 className="mb-2">{title}</h2>
 
-      <table className="mt-2">
-        <tbody>
-          {links.map((link) => (
-            <tr key={link.service}>
-              <td>
-                <h3 className="text-neutral-400">{link.service}</h3>
-              </td>
+      <div className="flex justify-between items-center flex-wrap gap-1">
+        {links.map((link) => {
+          const Icon =
+            serviceToIconMapping[
+              link.service as keyof typeof serviceToIconMapping
+            ];
 
-              <td className="pl-8">
-                <Link href={link.link}>{link.username}</Link>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+          return (
+            <Link key={link.service} href={link.link}>
+              <Icon /> {link.service}
+            </Link>
+          );
+        })}
+
+        <p className="text-neutral-400">@abhaykumarvats</p>
+      </div>
     </footer>
   );
 }
