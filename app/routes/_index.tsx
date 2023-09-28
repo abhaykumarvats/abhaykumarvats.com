@@ -9,7 +9,10 @@ import Links from "~/components/links";
 import type { LinksType } from "~/lib/types";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Abhay Kumar — The UI Guy" }];
+  return [
+    { title: "Abhay Kumar — The UI Guy" },
+    { name: "description", content: "Homepage of Abhay Kumar's UI portfolio" },
+  ];
 };
 
 export function loader() {
