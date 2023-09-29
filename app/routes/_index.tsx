@@ -19,7 +19,7 @@ export function loader() {
   const header = {
     title: "Abhay Kumar",
     subtitle: "The UI Guy",
-    email: "namaste@abhaykumarvats.com",
+    email: "abhaykv04@gmail.com",
   };
 
   const about = {
